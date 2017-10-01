@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript" src="js/loader.js" ></script>
+
+<script type="text/javascript" src="js/script.js" ></script>
+
+</head>
+<body>
+<div class="box">
+<div class="display" id="screen">
+    <h6>
+        <span id="pastCalculation"></span>
+        <span id="currentCalculation"></span>
+    </h6>
+</div>
+<div class="keys">
+ <p id="row5">
+     <input type="button" class="button black" value=" " onclick=''>
+    <input type="button" class="button black" value=" " onclick=''>
+    <input type="button" class="button black" value=" " onclick=''>
+</p> 
+ <p id="row4">
+    <input type="button" class="button black" value="7" onclick='v("7")'>
+    <input type="button" class="button black" value="8" onclick='v("8")'>
+    <input type="button" class="button black" value="9" onclick='v("9")'>
+</p>
+ <p id="row3">
+    <input type="button" class="button black" value="4" onclick='v("4")'>
+    <input type="button" class="button black" value="5" onclick='v("5")'>
+    <input type="button" class="button black" value="6" onclick='v("6")'>
+</p>
+ <p id="row2">
+    <input type="button" class="button black" value="1" onclick='v("1")'>
+    <input type="button" class="button black" value="2" onclick='v("2")'>
+    <input type="button" class="button black" value="3" onclick='v("3")'>
+</p>
+ <p id="row1">
+    <input type="button" class="button black" value="0" onclick='v("0")'>
+    <input type="button" class="button black" value="." onclick='v(".")'>
+    <input type="button" class="button black" value="C" onclick='doContinousCalculation()'>
+    <input type="button" class="button orange" value="=" onclick='doCompleteCalculation()'>
+  </p>
+</div>
+</div>
+</body>
+</html>
